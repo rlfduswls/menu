@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{margin:0;
+padding:0;}
+
+body{
+    background-color: white;
+}
+#wrap{
+    background: linear-gradient(to bottom, #F1ECC3, #BDE4D2,#F8D6AC);
+    width:800px;
+    margin:0 auto;
+    display: grid;
+    grid-template-areas: " . header1 ."
+    ". header2 ."
+    ". section ."
+    ". footer ."
+    ;
+    grid-template-columns: 100px 600px 100px;
+    grid-template-rows:  100px 40px 800px 200px;
+}
+/* 맨 위 배너 */
+#header1{
+    grid-area: header1;
+    background-color:white;
+    opacity: 0.4;
+    height: 90px;
+    border-radius: 20px;
+    text-align: center;
+    font-family:"Tenada";
+
+}
+
+/* 본 메뉴판  */
+#header2{
+    grid-area: header2;
+    background-color:rgb(198, 231, 223);
+    opacity: 0.7;
+    height: 40px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#hotice{
+    text-align: right;
+    font-size: medium;
+    color:#AB97F3;
+    font: 600 1.05rem/1 "SEBANG_Gothic_Bold";   
+}
+
+#section{
+    height: 790px;
+    grid-area: section;
+    background-color: white;
+    opacity:0.7;
+    display: grid;
+    grid-template-areas:
+    ". menu1 ."
+    ".menu2 ."
+    ". menu3 ."
+    ". menu4 ."
+    ". menu5 ."
+    ". menu6 ."
+    ". menu7 ."
+    ". menu8 ."
+    ". menu9 ."
+    ". menu10 ."
+    ". menu11 ."
+    ". menu12 .";
+    grid-template-columns: 50px 500px 50px;
+    grid-template-rows:   100px 100px 100px 100px 100px  100px 100px 100px 100px 100px 100px 100px 100px ;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+
+#menu1,#menu2,#menu3,#menu4,#menu5,#menu6,#menu7,#menu8,#menu9,#menu10,#menu11,#menu12{
+    background-color:#BDE4D2;
+    opacity: 0.4;
+    height: 90px;
+    box-shadow: 5px 5px 10px #809089;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 100px 450px 50px;
+    grid-template-rows: 80px;
+    place-items: center;}
+
+#menu1{
+    grid-area: menu1;
+    grid-template-areas:
+    "circle1 menuname1 price1";
+}
+#menu2{
+    grid-area: menu2;
+    grid-template-areas:
+    "circle2 menuname2 price2";
+}
+
+#menu3{
+    grid-area: menu3;
+    grid-template-areas:
+    "circle3 menuname3 price3";
+}
+
+#menu4{
+    grid-area: menu4;
+    grid-template-areas:
+    "circle4 menuname4 price4";
+}
+#menu5{
+    grid-area: menu5;
+    grid-template-areas:
+    "circle5 menuname5 price5";
+}
+#menu6{
+    grid-area: menu6;
+    grid-template-areas:
+    "circle6 menuname6 price6"
+}
+#menu7{
+    grid-area: menu7;
+    grid-template-areas:
+    "circle7 menuname7 price7"
+}
+#menu8{
+    grid-area: menu8;
+    grid-template-areas:
+    "circle8 menuname8 price"
+}
+#menu9{
+    grid-area: menu9;
+}
+#menu10{
+    grid-area: menu10;
+}
+#menu11{
+    grid-area: menu11;
+}
+#menu12{
+    grid-area: menu12;
+}
+
+#circle1,#circle2,#circle3,#circle4,#circle5,#circle6,#circle7,#circle8,#circle9,#circle10,#circle11,#circle12{
+    width: 70px;
+    height: 70px;
+    border-radius: 90px;
+    background-color: rgb(108, 139, 212);
+
+    
+}
+#menuname1,#menuname2,#menuname3,#menuname4,#menuname5,#menuname6,#menuname7,#menuname8,#menuname9,#menuname10,#menuname11,#menuname12{
+    width: 430px;
+    text-align: left;
+}
+/* #menuname1{
+    grid-area: menuname1;
+}
+#menuname2{
+    grid-area: menuname2;
+}
+#menuname3{
+    grid-area: menuname3;
+} */
+
+/* 메뉴이름 색상 및 폰트 설정 */
+#menuname1>h3, #menuname1>h5{
+color:blue;
+font-family: 'SEBANG_Gothic_Bold';
+}
+#menuname2>h3, #menuname2>h5{
+    color:blue;
+    font-family: 'SEBANG_Gothic_Bold';}
+
+#menuname3>h3, #menuname3>h5{
+color:blue;
+font-family: 'SEBANG_Gothic_Bold';}
+
+#menuname4>h3, #menuname4>h5{
+    color:blue;
+    font-family: 'SEBANG_Gothic_Bold';}
+
+ #menuname5>h3, #menuname5>h5{
+color:blue;
+font-family: 'SEBANG_Gothic_Bold';}
+
+#menuname6>h3, #menuname6>h5{
+    color:blue;
+    font-family: 'SEBANG_Gothic_Bold';
+    }
+
+#menuname7>h3, #menuname7>h5{
+     color:blue;
+     font-family: 'SEBANG_Gothic_Bold';}
+            
+#menuname8>h3, #menuname8>h5{
+    color:blue;
+    font-family: 'SEBANG_Gothic_Bold';}
+  
+    
+    
+
+
+
+/* -----------footer부분--------------- */
+#footer{
+    height: 100px;
+    grid-area: footer;
+    background-color: white;
+    opacity:0.7;
+    display: grid;
+    grid-template-areas: ". footer1 footer2 . ";
+    grid-template-columns: 25px 150px 400px 25px ;
+    grid-template-rows: 100px;
+    border-radius:  20px;
+    place-items: center;
+}
+
+#footer1{
+    text-align: center;
+    grid-area: footer1;
+    background-color:#BDE4D2;
+    opacity: 0.4;
+    height: 50px;
+    width: 130px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #809089;
+    border: none;
+    font-family: 'SEBANG_Gothic_Bold'
+
+    
+}
+#footer2{
+    grid-area: footer2;
+    background-color:#BDE4D2;
+    opacity: 0.4;
+    height: 50px;
+    width: 380px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #809089;
+    border:none;
+    font-family: 'SEBANG_Gothic_Bold'
+}
